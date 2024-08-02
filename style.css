@@ -18,13 +18,16 @@ nav {
 
 nav .left {
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
 }
 
 nav .left ul {
     display: flex;
     align-items: center;
     gap: 1.7rem;
-}
+} 
 
 nav .left ul li:hover {
     color: rgba(0, 0, 255, 0.763);
@@ -41,11 +44,15 @@ nav .left ul>li {
     margin-right: 15px;
 }
 
-nav .left ul li img {
+.logo {
+
+}
+
+.left .logo img {
     width: 70px;
 }
 
-nav .left ul li span {
+.left .logo span {
     position: absolute;
     right: 7px;
     top: 16px;
@@ -58,6 +65,7 @@ nav .right {
     display: flex;
     align-items: center;
     gap: 25px;
+    padding-right: 12px;
 }
 
 .right .contact-us {
@@ -105,7 +113,6 @@ nav .right {
 }
 
 .right .login-btn {
-    width: 82px;
     height: 36px;
     display: flex;
     justify-content: center;
@@ -127,8 +134,9 @@ nav .right {
 }
 
 .right .try-for-free-btn {
+    width: 199px;
     border: none;
-    padding: 12px 30px;
+    padding: 12px;
     background-color: rgba(18, 127, 38, 0.808);
     color: white;
     font-size: 1.09rem;
@@ -155,7 +163,7 @@ nav .right {
 
 .announcement a {
     font-weight: 400;
-    font-size: 0.99;
+    font-size: 0.99rem;
     text-decoration: underline;
     margin-left: 10px;
 }
@@ -250,11 +258,11 @@ nav .right {
 }
 
 .cards {
-    width: 85vw;
-    margin: auto;
     padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .card {
@@ -262,6 +270,7 @@ nav .right {
     border-radius: 8px;
     box-shadow: 1px 1px 8px #88888877;
     cursor: pointer;
+    margin: 12px 0;
 }
 
 .card h3 {
@@ -269,10 +278,11 @@ nav .right {
     color: #032d60;
 }
 
-h3:hover{
+h3:hover {
     color: #578ac8;
 }
- h4:hover {
+
+h4:hover {
     color: #578ac8;
 }
 
@@ -381,14 +391,14 @@ a:hover {
 
 .modules {
     display: flex;
-    justify-content: space-between;
-    width: 85vw;
-    margin: auto;
+    justify-content: space-around;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .module {
     position: relative;
-    width: 24vw;
+    width: 300px;
     height: 440px;
     border-radius: 8px;
     box-shadow: 1px 1px 8px #88888877;
@@ -496,7 +506,6 @@ a:hover {
 }
 
 .big-card .btns {
-    margin: 30px;
     justify-content: flex-start;
 }
 
@@ -526,11 +535,14 @@ a:hover {
 }
 
 .employe-cards {
-    width: 85vw;
-    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.big-card {
+    width: 57vw;
 }
 
 .employe-card {
@@ -596,7 +608,6 @@ a:hover {
 }
 
 .question-box h2 {
-    width: 50vw;
     margin: auto;
     padding: 40px;
     color: #032d60;
@@ -605,7 +616,7 @@ a:hover {
 }
 
 .question-box p {
-    width: 50vw;
+    width: 340px;
     margin: auto;
     text-align: center;
 }
@@ -657,18 +668,17 @@ footer .first-part .links .image-icon {
 
 .first-part .links .image-icon img {
     width: 100px;
-    
+
 }
 
-.first-part .list {
-    
-}
+.first-part .list {}
 
 .first-part .list h4 {
     padding-bottom: 44px;
     font-size: 0.82rem;
     font-weight: 500;
 }
+
 .first-part .list ul li {
     list-style: none;
     padding-bottom: 25px;
@@ -691,20 +701,92 @@ footer .second-part {
 }
 
 .second-part .other-links {
-   margin: 0 22px ;
-   font-size: 0.8rem;
+    margin: 0 22px;
+    font-size: 0.8rem;
 }
 
 .second-part .other-links div {
     margin: 12px 0px;
     display: flex;
     gap: 12px;
- }
+}
 
- .second-part .other-links div  a{
+.second-part .other-links div a {
     color: white;
-    
- }
 
-.second-part .other-links p {
- }
+}
+
+@media only screen and (max-width : 1395px) {
+    nav .left ul {
+        display: none;
+        display: hide;
+    }
+
+    .contact-us {
+        display: none;
+    }
+    .try-for-free-btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 734px) {
+    .info h2 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .third-section h2 {
+        font-size: 2rem;
+    }
+
+    .right .contact-us {
+        display: none;
+    }
+
+    .second-bg-image {
+        top: 0px;
+    }
+
+    .text-one h1 , .text-two h2 {
+        font-size: 2rem;
+    }
+
+    .text-one p , .text-two p {
+        font-size: 1rem;
+    }
+
+    .big-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .second-part .other-links div {
+        display: none;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .first-part {
+        display: none;
+    }
+
+    .first-btn , .second-btn {
+        width: 228px;
+    }
+
+    .question-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .question-box p {
+        width: auto;
+    }
+}
