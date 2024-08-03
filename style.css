@@ -16,36 +16,36 @@ nav {
     justify-content: space-between;
 }
 
-nav .left {
+.left {
     font-weight: 500;
     display: flex;
     align-items: center;
     gap: 1.7rem;
 }
 
-nav .left ul {
+.left ul {
     display: flex;
     align-items: center;
     gap: 1.7rem;
 } 
 
-nav .left ul li:hover {
+.left ul li:hover {
     color: rgba(0, 0, 255, 0.763);
     cursor: pointer;
 }
 
-nav .left ul li {
+.left ul li {
     list-style: none;
 }
 
-nav .left ul>li {
+.left ul>li {
     list-style: none;
     position: relative;
     margin-right: 15px;
 }
 
 .logo {
-
+    position: relative;
 }
 
 .left .logo img {
@@ -172,24 +172,40 @@ nav .right {
 /*Second Section*/
 .second-section {
     position: relative;
+    display: flex;
+    margin: 12px 0;
 }
 
-.second-section .info {
-    width: 90vw;
-    margin: auto;
-    padding: 80px 0 60px 0;
+.info {
 }
 
-.info h2 {
-    width: 32vw;
+.info .content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2 {
     font-size: 3rem;
     color: #032d60;
+    width: 80%;
+    text-align: center;
 }
 
-.info p {
-    width: 37vw;
+.content p {
     font-size: 1.2rem;
     margin: 29px 0;
+    width: 80%;
+    text-align: center;
+}
+
+.info-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
 .first-btn {
@@ -199,7 +215,6 @@ nav .right {
     background-color: #0373c3;
     color: white;
     font-size: 1.02rem;
-    margin-right: 18px;
 }
 
 .first-btn:hover {
@@ -231,18 +246,20 @@ nav .right {
     width: 100%;
 }
 
-.video-wrapper {
-    position: absolute;
-    top: 19%;
-    right: 8%;
-    width: 39vw;
-    height: 337px;
-    border: 1px solid gray;
-    border-radius: 13px;
-    border: none;
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
 }
 
-.video-wrapper iframe {
+.video-wrapper {
+    position: relative;
+    width: 38vw;
+    height: 50vh;
+}
+
+.video-wrapper iframe  {
     border-radius: 13px;
 }
 
@@ -358,12 +375,6 @@ a:hover {
     font-weight: 400;
 }
 
-.btns {
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-}
-
 
 .text-two h2 {
     width: 60vw;
@@ -453,8 +464,6 @@ a:hover {
 
 .companies-logo {
     display: flex;
-    width: 90vw;
-    margin: auto;
     padding: 30px;
     gap: 25px;
     flex-wrap: wrap;
@@ -516,6 +525,7 @@ a:hover {
     right: 0px;
     top: 0px;
     width: 37vw;
+    z-index: -1;
 }
 
 .big-card-image img {
@@ -768,6 +778,7 @@ footer .second-part {
     }
 
     .btns {
+        display: flex;
         flex-direction: column;
         gap: 12px;
         justify-content: center;
@@ -789,4 +800,45 @@ footer .second-part {
     .question-box p {
         width: auto;
     }
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .video-wrapper {
+        width: 90vw;
+    }
+
+    .big-card h2 {
+        width: 70vw;
+    }
+
+    .sixth-section h2 {
+        font-size: 1.5rem;
+        padding: 73px 0px;
+        width: 90vw;
+    }
+
+    .info-btns{
+        flex-direction: column;
+    }
+
+    .big-card {
+        padding: 12px;
+    }
+
+    .big-card h2 {
+        width: 55vw;
+        color: #032d60;
+        margin: 30px;
+        font-size: 2.2rem;
+        z-index: 2;
+    }
+}
+
+
+
+@media only screen and (max-width : 430px){
 }
