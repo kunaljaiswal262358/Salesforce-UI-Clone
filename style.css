@@ -769,10 +769,6 @@ footer .second-part {
         font-size: 1rem;
     }
 
-    .big-card h2 {
-        font-size: 1.5rem;
-    }
-
     .second-part .other-links div {
         display: none;
     }
@@ -811,10 +807,6 @@ footer .second-part {
         width: 90vw;
     }
 
-    .big-card h2 {
-        width: 70vw;
-    }
-
     .sixth-section h2 {
         font-size: 1.5rem;
         padding: 73px 0px;
@@ -833,8 +825,9 @@ footer .second-part {
         width: 55vw;
         color: #032d60;
         margin: 30px;
-        font-size: 2.2rem;
+        font-size: 1.2rem;
         z-index: 2;
+        margin-top: 113px;
     }
 }
 
